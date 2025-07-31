@@ -1,3 +1,5 @@
+from fastAPI.security import HTTPBasic, HTTPBasicCredential
+
 app = FastAPI()
 
 @app.get("/ping", response_class=PlainTextResponse)
